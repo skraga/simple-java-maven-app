@@ -1,0 +1,10 @@
+#!/usr/bin/env groovy
+
+@Library('demo-shared-library@master')_
+
+stdPipeline {
+    branch = 'master'
+    scmUrl = 'https://github.com/skraga/simple-java-maven-app.git'
+    email = 'root@localhost'
+    targetServer = '8.8.8.8'
+}
